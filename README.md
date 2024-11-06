@@ -20,9 +20,11 @@ SpendSmart is a personal finance management app designed to help users track inc
    Displays all expense entries for the month. Users can add new expenses, categorized and dated, which are automatically calculated into the monthly total.
 3. **Transactions Screen**  
    Shows income entries for the selected month. Users can input sources of income, along with amounts and dates, which update the monthly income total.
-4.**Goal Screen**
+    
+4. **Goal Screen**
   Setting personal/partner goals.
-5.**Settings Screen**
+  
+5. **Settings Screen**
   Allows users to link with a partner, manage profile and preferences, adjust notification settings, and customize app functionality.
 
 ## Installation
