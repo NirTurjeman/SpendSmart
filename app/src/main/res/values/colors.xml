@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="Defualt_Background">#E4E4E4</color>
+    <color name="link_Text">#375FD7</color>
+    <color name="button">#76C0CD</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#52AC31</color>
+    <color name="primary_text_color">#333333</color>
+    <color name="secondary_text_color">#555555</color>
+    <color name="tertiary_text_color">#777777</color>
+    <color name="date_text_color">#AAAAAA</color>
+    <color name="price_highlight_color">#FF5722</color>
+</resources>

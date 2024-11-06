@@ -1,0 +1,81 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Defualt_Background"
+    android:padding="16dp">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/goal_toolbar_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logo_icon"
+        android:alpha="0.8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Return Button -->
+    <ImageView
+        android:id="@+id/goal_return_icon"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/return_icon"
+        android:alpha="0.6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Container for Goals -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/goal_toolbar_icon"
+        app:layout_constraintBottom_toTopOf="@id/goal_input_section"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="Goals page."
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/goals_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <!-- Goal Input Section -->
+    <LinearLayout
+        android:id="@+id/goal_input_section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/goal_amount_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Goal Amount"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/goal_description_input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter Goal Description"
+            android:inputType="textCapSentences|textMultiLine"
+            android:layout_marginBottom="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_goal_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Goal"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/button" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

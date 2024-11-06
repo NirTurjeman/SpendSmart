@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- About option -->
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about"
+        app:showAsAction="never" />
+
+    <!-- Transactions option -->
+    <item
+        android:id="@+id/action_transactions"
+        android:title="@string/transactions"
+        app:showAsAction="never" />
+
+    <!-- Goals option -->
+    <item
+        android:id="@+id/action_goals"
+        android:title="@string/goals"
+        app:showAsAction="never" />
+    <!-- Settings option -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+</menu>

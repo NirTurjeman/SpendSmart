@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Defualt_Background"
+    android:padding="16dp">
+    <FrameLayout
+        android:id="@+id/blur_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Defualt_Background"
+        android:visibility="gone">
+    </FrameLayout>
+
+    <!-- Top Icons (Aligned to Left and Right) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/transactions_toolbar_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            app:srcCompat="@drawable/logo_icon"
+            android:alpha="0.8"/>
+
+        <ImageView
+            android:id="@+id/transactions_return_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/return_icon"
+            android:alpha="0.6"/>
+    </RelativeLayout>
+
+    <!-- Toolbar for Actions -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/transactions_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Defualt_Background"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight"
+        android:elevation="6dp"
+        android:padding="8dp" />
+
+    <!-- Transaction List (RecyclerView) -->
+    <FrameLayout
+        android:id="@+id/fragment_Transaction_table"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:layout_marginVertical="8dp"
+        android:background="@color/white"
+        android:elevation="4dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transactions_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_Transaction_functions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:elevation="10dp"
+        android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/transactions_addNewTrans_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button"
+            app:cornerRadius="10dp"
+            android:textSize="16sp"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"
+            android:text="Add New Transaction"/>
+
+    </FrameLayout>
+</LinearLayout>

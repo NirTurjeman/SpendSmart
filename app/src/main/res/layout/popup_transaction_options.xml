@@ -1,0 +1,117 @@
+<!-- popup_transaction_options.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:background="@drawable/popup_background">
+
+        <!-- Category Selection Label and Dropdown -->
+        <TextView
+            android:id="@+id/transactions_category_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/transactions_category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:entries="@array/category_array" />
+
+        <!-- Income/Expense Switch -->
+        <TextView
+            android:id="@+id/transactions_type_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction Type"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black" />
+
+        <Switch
+            android:id="@+id/transactions_type_switch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Income / Expense"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"/>
+
+        <!-- Price Input -->
+        <TextView
+            android:id="@+id/transactions_Price_LBL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/transactions_Price_Input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:hint="Enter Price"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Description Input -->
+        <TextView
+            android:id="@+id/transactions_Description_LBL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/transactions_Description_Input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:padding="12dp"
+            android:hint="Enter Description"
+            android:background="@drawable/edit_text_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/transactions_Submit_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/button"
+                    app:cornerRadius="10dp"
+                    android:textSize="16sp"
+                    android:elevation="4dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Submit"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/transactions_Cancel_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/button"
+                    app:cornerRadius="10dp"
+                    android:textSize="16sp"
+                    android:elevation="4dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+

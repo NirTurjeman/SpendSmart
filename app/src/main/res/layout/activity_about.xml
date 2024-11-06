@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/design_default_color_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Return Button -->
+        <ImageView
+            android:id="@+id/about_return_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/return_icon"
+            android:contentDescription="Back"
+            android:alpha="0.6"
+            app:srcCompat="@drawable/return_icon" />
+
+        <!-- Main Content Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/about_return_icon"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Application Icon -->
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo_icon"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="App Icon" />
+
+            <!-- Application Title -->
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SpendSmart"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="16dp" />
+
+            <!-- Version Info -->
+            <TextView
+                android:id="@+id/app_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0.0"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="8dp" />
+
+            <!-- Divider Line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CCCCCC"
+                android:layout_marginVertical="16dp" />
+
+            <!-- About App Description -->
+            <TextView
+                android:id="@+id/app_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SpendSmart is an application designed to help users track their income and expenses, manage their budget, and set financial goals in an easy and accessible way."
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp" />
+
+            <!-- Features Section -->
+            <TextView
+                android:id="@+id/features_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Key Features:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/features_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Track income and expenses\n• Set and monitor savings goals\n• Sync with partners\n• Generate financial reports\n• Sort transactions by date, category, and amount"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="8dp" />
+
+            <!-- Developer Info Section -->
+            <TextView
+                android:id="@+id/developer_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Development Team:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/developer_names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Moshe Cohen\n• Yael Levi\n• Dan Israeli\n• Ruti Barak"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="8dp" />
+
+            <!-- Contact Information -->
+            <TextView
+                android:id="@+id/contact_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/contact_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: support@spendsmart.com"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

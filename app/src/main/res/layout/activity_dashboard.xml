@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/Defualt_Background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/toolbar_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/logo_icon"
+            android:alpha="0.6"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_toEndOf="@id/toolbar_icon"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:elevation="25dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight">
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/income_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Income: ₪0"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/expense_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Expenses: ₪0"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:id="@+id/balance_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remaining Balance: ₪0"
+                android:textSize="18sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="26dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dashboard_button_new_trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Transaction"
+            android:textSize="16sp"
+            app:cornerRadius="10dp"
+            app:backgroundTint="@color/button"
+            android:textColor="@android:color/white"
+            android:elevation="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dashboard_button_new_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button"
+            app:cornerRadius="10dp"
+            android:textSize="16sp"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"
+            android:text="Add New Goal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/transactions_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recent_transactions"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp" />
+    </LinearLayout>
+</LinearLayout>

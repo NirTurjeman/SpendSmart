@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Defualt_Background"
+    android:paddingTop="0dp">
+
+    <ImageView
+        android:id="@+id/login_Logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-79dp"
+        app:srcCompat="@drawable/spend_smart_logo" />
+
+    <LinearLayout
+        android:id="@+id/login_inputs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Username Label and Input -->
+        <TextView
+            android:id="@+id/login_Input_UserName_LBL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/login_Input_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:hint="@string/enter_username"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password Input -->
+        <TextView
+            android:id="@+id/login_Input_Password_LBL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSize"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/login_Input_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:padding="12dp"
+            android:hint="@string/enter_password"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/login_Buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Sign In Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_SignIn_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button"
+            app:cornerRadius="10dp"
+            android:textSize="16sp"
+            android:elevation="4dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/sign_in"/>
+
+        <!-- Sign Up Label -->
+        <TextView
+            android:id="@+id/login_SignUp_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/sign_up_for_free"
+            android:textColor="@color/link_Text"
+            android:textSize="15sp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
