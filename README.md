@@ -35,7 +35,7 @@ To get started with SpendSmart:
    git clone https://github.com/yourusername/SpendSmart.git
 
 ## Demo Video
-[Watch the demo video here](URL_TO_YOUR_VIDEO)
+[Watch the demo video here](Demo_Video.mov)
 
 ## Presentation
 [View the presentation here](SpendSmart.pdf)
