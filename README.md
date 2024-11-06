@@ -5,12 +5,10 @@ SpendSmart is a Kotlin-based app that helps users manage their expenses and inco
 ## Table of Contents
 - [App Overview](#app-overview)
 - [Screens Overview](#screens-overview)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Demo Video](#demo-video)
 - [Presentation](#presentation)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## App Overview
 SpendSmart is designed to simplify personal finance tracking. The app’s interface includes dropdown options for monthly selection and provides an organized layout for tracking income and expenses effectively.
