@@ -38,5 +38,5 @@ To get started with SpendSmart:
 [Watch the demo video here](URL_TO_YOUR_VIDEO)
 
 ## Presentation
-[View the presentation here](URL_TO_YOUR_PRESENTATION)
+[View the presentation here](SpendSmart.pdf)
 
