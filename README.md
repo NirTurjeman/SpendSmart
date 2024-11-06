@@ -5,24 +5,40 @@ SpendSmart is a Kotlin-based app that helps users manage their expenses and inco
 ## Table of Contents
 - [App Overview](#app-overview)
 - [Screens Overview](#screens-overview)
-- [Usage](#usage)
+- [Installation](#installation)
 - [Demo Video](#demo-video)
 - [Presentation](#presentation)
-- [Contributing](#contributing)
 
 ## App Overview
-SpendSmart is designed to simplify personal finance tracking. The app’s interface includes dropdown options for monthly selection and provides an organized layout for tracking income and expenses effectively.
+SpendSmart is a personal finance management app designed to help users track income and expenses. By organizing data by month, the app provides a clear overview of financial habits and assists users in maintaining a balanced budget.
 
 ## Screens Overview
-### 1. Home Screen
-- This is the main interface where users can view their total income and expenses at a glance.
-- Users can select a month from the dropdown to filter the data displayed.
 
-### 2. Expenses Screen
-- Displays a list of expenses for the selected month.
-- Users can add new expenses, and the totals update in real-time.
+1. **Login Screen**  
+   Ensuring personalized access to their financial data.
 
-### 3. Income Screen
-- Shows a list of income sources for the selected month.
-- Users can add new income entries, with totals updating as entries are added.
+2. **Dashboard Screen**  
+   Displays all expense entries for the month. Users can add new expenses, categorized and dated, which are automatically calculated into the monthly total.
+
+3. **Transactions Screen**  
+   Shows income entries for the selected month. Users can input sources of income, along with amounts and dates, which update the monthly income total.
+
+4.**Goal Screen**
+  Setting personal/partner goals.
+
+5.**Settings Screen**
+  Allows users to link with a partner, manage profile and preferences, adjust notification settings, and customize app functionality.
+
+## Installation
+To get started with SpendSmart:
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/yourusername/SpendSmart.git
+
+## Demo Video
+[Watch the demo video here](URL_TO_YOUR_VIDEO)
+
+## Presentation
+[View the presentation here](URL_TO_YOUR_PRESENTATION)
 
