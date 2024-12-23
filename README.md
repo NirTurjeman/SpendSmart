@@ -32,7 +32,7 @@ To get started with SpendSmart:
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/yourusername/SpendSmart.git
+   git clone https://github.com/NirTurjeman/SpendSmart.git
 
 ## Demo Video
 [Watch the demo video here](Demo_Video.mp4)
